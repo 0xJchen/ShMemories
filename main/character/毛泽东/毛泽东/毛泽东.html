@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/simple-demo.html -->
+    <!-- <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>毛泽东</title>
+	<link rel="stylesheet" href="./css/毛泽东.css"/>
+	<link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+	<script type="text/javascript" src='https://webapi.amap.com/maps?v=1.4.15&key=af12464d70c41b3fd32008decb82cd61'></script>
+	<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.0.0/build/g6.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+
+<body>
+	<div id="title">
+		<div class="title-text">毛泽东</div>
+		<a href="../../../main.html" target="_self"><div class="btn-back"><i class="fa fa-home">返回</i></div></a>
+		<a href="https://bigpeppapig.maps.arcgis.com/apps/MapTour/index.html?appid=b92f68de09c04716a86d4f68d7b2143d" target="_self">
+			<div class="btn-main"><i class="fa fa-camera-retro">漫步街区</i></div>
+		</a>
+	</div>
+	<div id="outer-box">
+		<div id="relations">
+			<div id="intro">
+				<p>  毛泽东（1893年12月26日-1976年9月9日），字润之（原作咏芝，后改润芝），笔名子任。湖南湘潭人。中国人民的领袖，伟大的马克思主义者，无产阶级革命家、战略家和理论家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人，诗人，书法家。</p>
+			</div>
+			<div id="relation-title">
+				<h3>人物关系图</h2>
+			</div>
+			<div id="mountNode"></div>
+		</div>
+		<div id="map">
+			<div id="map-title">
+				<h3>人物踪迹</h3>
+			</div>
+			<div id="container"></div>
+		</div>	
+	</div>
+	<!-- UI组件库 1.0 -->
+	<script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+	<script type="text/javascript" src="./js/毛泽东.js"></script>
+	<script type="text/javascript" src="./js/毛泽东关系.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

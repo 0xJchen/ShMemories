@@ -1,0 +1,145 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	/* background-image: url("../pics/bg.png"); */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.timeline-wrap {
+	width: 100%;
+	height: 100%;
+	transition: all 0ms ease 0s;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.timeline-block {
+	height: 100%;
+	width: 12.5%;
+	float: left;
+	border-right: 0.5px solid grey;
+}
+
+.timeline {
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.35s;
+	transform: translate3d(0, 0, 0);
+	height: 100%;
+}
+
+.centerized_father {
+	height: 100%;
+	width: 100%;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.centerized_child {
+	vertical-align: bottom;
+	padding: 0px 10px 30px;
+	transition-property: padding;
+	transition-duration: 0.3s;
+	transition-delay: 0.15s;
+	display: table-cell;
+	text-align: center;
+}
+
+.grid_single_title {
+	opacity: 1;
+	transform: scale(1, 1);
+    text-align: left;
+	position: relative;
+    width: 100%;
+    z-index: 20;
+    line-height: 1.2em;
+    padding: 0px 10px;
+    font-weight: normal;
+	transition-property: transform,opacity,padding;
+	transition-duration: 0.25s;
+	animation-duration: 0.7s;
+	animation-fill-mode: both;
+}
+
+.title-wrap {
+	text-transform: uppercase;
+}
+
+.title-wrap .title-font {
+	margin: 0;
+	font-size: 1.75em;
+	color: #FFFFFF;
+	margin-bottom: 4px;
+	font-weight: 600;
+	text-rendering: optimizelegibility;
+    line-height: 1.2em;
+}
+
+.content-wrap {
+	opacity: 1;
+	transform: scale(1, 1);
+    text-align: left;
+	color: #FFFFFF;
+	transition-property: transform,opacity,padding;
+	transition-duration: 0.25s;
+	font-size: 0.9em;
+    margin-top: 2px;
+}
+
+.hidden-btn-wrap {
+	position: absolute;
+	transition-property: left, opacity, bottom;
+	transition-duration: 0.3s;
+	transition-delay: 0s;
+    bottom: 30px;
+	opacity: 0;
+	color: #FFFFFF;
+}
+
+.hidden-btn {
+    overflow: visible;
+	margin: 0px 0px 20px 0px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    min-height: 46px;
+	margin-bottom: 0px;
+}
+
+.hidden-btn input {
+	box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    color: #FFFFFF;
+	background-color: transparent;
+    transition-property: color,background-color,opacity;
+	transition-duration: 0.25s;
+    line-height: 1em;
+    float: left;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 16px 20px 16px 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-appearance: none;
+    border-width: 0px;
+	border-radius: 0px;
+	text-transform: uppercase;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}

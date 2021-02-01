@@ -1,0 +1,33 @@
+#title {
+	height: 100px;
+	border-bottom: 2px solid lightgrey;
+	background-image: url(../pics/bg2-title.png);
+	background-position-y: -70px;
+}
+
+#title .title-text {
+	font-size: 40px;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+#title .btn-back {
+	width: 80px;
+	height: 30px;
+	background-color: darkorange;
+	margin-right: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-10%);
+	display: inline-block;
+	text-align: center;
+	float: right;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 20px;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 原始地址：//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/simple-demo.html -->
+    <!-- <base href="//webapi.amap.com/ui/1.0/ui/misc/PathSimplifier/examples/" /> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>朱德</title>
+	<link rel="stylesheet" href="./css/毛泽东.css"/>
+	<link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+	<script type="text/javascript" src='https://webapi.amap.com/maps?v=1.4.15&key=af12464d70c41b3fd32008decb82cd61'></script>
+	<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.0.0/build/g6.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+
+<body>
+	<div id="title">
+		<div class="title-text">朱德</div>
+		<a href="../../../main.html" target="_self"><div class="btn-back"><i class="fa fa-home">返回</i></div></a>
+		<a href="https://bigpeppapig.maps.arcgis.com/apps/MapTour/index.html?appid=b92f68de09c04716a86d4f68d7b2143d" target="_self">
+			<div class="btn-main"><i class="fa fa-camera-retro">漫步街区</i></div>
+		</a>
+	</div>
+	<div id="outer-box">
+		<div id="relations">
+			<div id="intro">
+				<p>  朱德（1886年12月1日-1976年7月6日），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，无产阶级革命家、政治家和军事家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人之一。中华人民共和国十大元帅之首。建国初期，兼任中共中央纪律检查委员会书记，为加强执政党的建设，维护党的组织纪律，克服党内各种不良倾向，保持党的优良作风，进行了大量卓有成效的工作。他还多次出国访问、会见外国领导人，增进了中国人民和各国人民的友谊。在“文化大革命”期间，他曾遭到林彪、江青集团的侮辱和打击，但受到毛泽东的保护。1976年7月6日在北京逝世。主要著作收入《朱德选集》。</p>
+			</div>
+			<div id="relation-title">
+				<h3>人物关系图</h2>
+			</div>
+			<div id="mountNode"></div>
+		</div>
+		<div id="map">
+			<div id="map-title">
+				<h3>人物踪迹</h3>
+			</div>
+			<div id="container"></div>
+		</div>	
+	</div>
+	<!-- UI组件库 1.0 -->
+	<script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+	<script type="text/javascript" src="./js/朱德.js"></script>
+	<script type="text/javascript" src="./js/朱德关系.js"></script>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#title {
+	height: 100px;
+	border-bottom: 2px solid lightgrey;
+	background-image: url(../images/bg2.png);
+	background-position-y: -365px;
+}
+
+#title .title-text {
+	font-size: 40px;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+#title .btn-back {
+	width: 80px;
+	height: 30px;
+	background-color: darkorange;
+	margin-right: 50px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-10%);
+	display: inline-block;
+	text-align: center;
+	float: right;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 0px;
+}
+
+.whole {
+	height: 100%;
+	background-color: dimgrey;
+}
+
+/*css reset(仅对于时间轴进行css重构)*/
+#timerline ul{
+	list-style-type: none;
+}
+#timerline li{
+	float: left;
+}
+#timerline a{
+	text-decoration: none;
+	color: inherit;
+}
+/*css reset end*/
+
+/*浮动清楚的兼容性*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden} /*所有主流浏览器都支持 :after 伪元素。*/ 
+.clearfix{*+height:1%;}/*不知道有什么用处，不加ie7也没有问题*/ 
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;} 
+.clearfix{*zoom:1;}/*只针对IE6/7 */ 
+/*end*/
+
+
+#timerline{
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid #FFFFFF;
+	border-radius: 0px;
+	overflow: hidden;
+	/*background: url('../images/dot.gif') left 43px repeat-x;*/ 
+	position: relative;
+}
+
+.timerlineul{
+	height: 100%;
+}
+.dates{
+	/*时间轴日期的样式*/
+	width: 100%;
+	/*margin-left: -1400px;*/
+	padding-left: 0;
+	/*margin: 0 0 5px 0;*/
+	margin: 0;
+	transition: all 1s;
+	position: relative;
+}	
+.dates li{
+	width: 9.09%;
+	padding: 10px;
+	box-sizing: border-box;
+	/*background: url('../images/biggerdot.png') center bottom no-repeat;*/
+	text-align: center;
+	color: lightsalmon;
+	font-size: 18px;
+	border-left: 2px solid lightgrey;
+}
+/*end*/
+/*控制器样式 start and stop stylesheet*/
+.timerline-btns{
+	width: 200px;
+	margin: 0 auto;
+	top: 18px;
+	text-align: center;
+	/*border:1px solid red;*/
+	margin-bottom:10px;
+}
+.timerline-btns>div{
+	width: 33.33%;
+	float: left;
+	font-size: 30px;
+	color: #FFCC99;
+	
+	transition: all .5s;
+}
+.timerline-btns>div:hover{
+	transform: scale(1.4);
+	transition: all .5s;
+}
+.timerline-btns>div:first-child{
+	
+}
+.processcontainer{
+	box-sizing: border-box;
+	position: absolute;
+	top:0px;
+   width:100%;
+   /*border:1px solid #6C9C2C;*/  
+   height:100%;
+   border-radius: 0px;
+ } 
+ /*进度条 样式*/
+#processbar{
+	margin-left: 1px;
+	opacity: .8;
+   	background:#FFFFFF;  
+   	/* float:left; */
+   	height:100%;  
+   	text-align:center;  
+   	line-height:150%; 
+   border-radius: 0px;
+   transition: all 1.5s;
+ }
+ .timerlineul :hover .processcontainer{
+ 	background: red;
+ }
+ .dates li:hover{
+ 	cursor: pointer;
+
+ }  
